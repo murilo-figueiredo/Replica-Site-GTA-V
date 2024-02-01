@@ -1,0 +1,433 @@
+body{
+    background-color: #282828;
+    color: #ffffff;
+}
+
+.cabecalho{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    background-color: #0b0b0b;
+    border-bottom: 1px solid #282828;
+}
+
+.cabecalho .logo{
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu li a{
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Chalet', sans-serif;
+}
+.cabecalho .menu li a:hover{
+    background-color: rgba(255, 255, 255, .1);
+    border-bottom: 2px solid #ffffff;
+}
+
+.home{
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+.home::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+.home .imagem-fundo{
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes{
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home .informacoes .lista-de-jogos{
+    display: flex;
+    gap: 32px;
+}
+
+.home .informacoes .lista-de-jogos img{
+    max-width: 150px;
+}
+
+.home .informacoes .titulo{
+    font-family: 'ChaletComprime', sans-serif;
+    font-size: 55px;
+}
+
+.home .informacoes .texto{
+    font-family: 'Chalet', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.home .botoes{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-ver-trailer, .btn-comprar, .btn-plataforma-gta, .btn-plataforma-online{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 0.5px solid #ffffff;
+    border-radius: 4px;
+    font-family: 'ChaletComprime', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 38px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+.btn-ver-trailer:hover, .btn-comprar:hover, .btn-plataforma-gta:hover, .btn-plataforma-online:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.boas-vindas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/bg-section-boas-vindas.jpg');
+    background-size: cover;
+    background-position: center;
+    gap: 15px;
+    min-height: 100vh;
+    padding: 50px 150px;
+    border-top: 1px solid #282828;
+}
+
+.boas-vindas .personagens, .gta-online .personagens{
+    width: 550px;
+}
+
+.boas-vindas .informacoes, .gta-online .informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.boas-vindas .informacoes img, .gta-online .informacoes img{
+    width: 150px;
+}
+
+.boas-vindas .informacoes .titulo, .gta-online .informacoes .titulo{
+    font-family: 'ChaletComprime', sans-serif;
+    font-size: 55px;
+}
+
+.boas-vindas .informacoes .texto, .gta-online .informacoes .texto{
+    font-family: 'Chalet', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.gta-online{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/bg-section-online.jpg');
+    background-size: cover;
+    background-position: center;
+    gap: 15px;
+    min-height: 100vh;
+    padding: 50px 150px;
+    border-top: 1px solid #282828;
+}
+
+.compre-ja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #111111;
+    border-top: 1px solid #282828;
+}
+
+.compre-ja .titulo{
+    font-family: 'ChaletComprime', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.compre-ja .cartoes{
+    display: flex;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.compre-ja .cartao-gta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    background-image: url('../img/bg-gta-5.jpg');
+    background-size: 100% 250px;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #282828;
+    padding: 60px 80px;
+    gap: 40px;
+    align-self: flex-start;
+}
+
+.compre-ja .cartao-online{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    background-image: url('../img/bg-gta-online.jpg');
+    background-size: 100% 250px;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 50%;
+    border: 1px solid #282828;
+    border-radius: 10px;
+    padding: 60px 80px;
+    gap: 40px;
+    align-self: flex-start;
+}
+
+.compre-ja .capa-do-jogo{
+    width: 270px;
+}
+
+.compre-ja .informacoes-botao-gta{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+.compre-ja .informacoes-botao-online{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    gap: 44px;
+}
+
+.compre-ja .informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.compre-ja .informacoes h3{
+    font-family: 'ChaletComprime', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.compre-ja .informacoes .texto{
+    color: #e8e8e8;
+    font-family: 'Chalet', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.compre-ja .informacoes .plataformas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.compre-ja .cartao-online .expansao{
+    font-family: 'Chalet', sans-serif;
+    font-size: 14px;
+    width: 80%;
+    padding: 15px 20px;
+    border: 1px solid #282828;
+    border-radius: 5px;
+    background-color: rgba(40, 40, 40, .5);
+}
+
+.compre-ja .btn-plataforma-gta, .compre-ja .btn-plataforma-online{
+    width: 100%;
+    cursor: pointer;
+}
+
+.compre-ja .btn-plataforma-gta .plataformas, .compre-ja .btn-plataforma-online .plataformas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+    display: none;
+    opacity: 0;
+}
+.compre-ja .btn-plataforma-gta .plataformas.ativo, .compre-ja .btn-plataforma-online .plataformas.ativo{
+    display: flex;
+    opacity: 1;
+}
+
+.compre-ja .btn-plataforma-gta .plataformas li, .compre-ja .btn-plataforma-online .plataformas li{
+    padding: 20px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .85);
+    transition: all .3s ease-in;
+}
+
+.compre-ja .btn-plataforma-gta .plataformas li:nth-child(1), .compre-ja .btn-plataforma-online .plataformas li:nth-child(1){
+    border: 1px solid #00439c;
+}
+.compre-ja .btn-plataforma-gta .plataformas li:nth-child(1):hover, .compre-ja .btn-plataforma-online .plataformas li:nth-child(1):hover{
+    border: 2px solid #002e6b;
+    background-color: #00439c;
+}
+
+.compre-ja .btn-plataforma-gta .plataformas li:nth-child(2), .compre-ja .btn-plataforma-online .plataformas li:nth-child(2){
+    border: 1px solid #387a26;
+}
+.compre-ja .btn-plataforma-gta .plataformas li:nth-child(2):hover, .compre-ja .btn-plataforma-online .plataformas li:nth-child(2):hover{
+    border: 2px solid #255219;
+    background-color: #387a26;
+}
+
+.compre-ja .btn-plataforma-gta .plataformas li:nth-child(3){
+    border: 1px solid #00439c;
+}
+.compre-ja .btn-plataforma-gta .plataformas li:nth-child(3):hover{
+    border: 2px solid #002e6b;
+    background-color: #00439c;
+}
+
+.compre-ja .btn-plataforma-gta .plataformas li:nth-child(4){
+    border: 1px solid #387a26;
+}
+.compre-ja .btn-plataforma-gta .plataformas li:nth-child(4):hover{
+    border: 2px solid #255219;
+    background-color: #387a26;
+}
+
+.compre-ja .btn-plataforma-gta .plataformas li:nth-child(5){
+    border: 1px solid #fcaf17;
+}
+.compre-ja .btn-plataforma-gta .plataformas li:nth-child(5):hover{
+    border: 2px solid #ab7303;
+    background-color: #fcaf17;
+}
+
+.compre-ja .melhorias{
+    font-family: 'Chalet', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid #282828;
+    border-radius: 10px;
+    background-color: #000000;
+    margin: 45px;
+    padding: 40px 60px;
+}
+
+.compre-ja .classificacao-indicativa{
+    width: 70px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+.rodape{
+    display: flex;
+    min-height: 250px;
+    padding: 40px;
+    gap: 25px;
+    background-color: #000000;
+    border-top: 1px solid #282828;
+}
+
+.rodape .aviso{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rodape .aviso p{
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.rodape .aviso p strong{
+    text-decoration: underline;
+}
+
+.rodape .aviso p span:nth-child(1){
+    color: #ff0000;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.rodape .aviso p span:nth-child(2){
+    color: #ff0000;
+    font-weight: bolder;
+}
+
+.rodape .aviso p a{
+    color: #ffff00;
+    text-decoration: underline;
+    transition: all .3s ease-in;
+}
+.rodape .aviso p a:hover{
+    color: #ff8c00;
+}
+
+.rodape .pessoal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rodape .pessoal p{
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.rodape .pessoal p strong{
+    text-decoration: underline;
+}
+
+.rodape .pessoal .redes-sociais ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rodape .pessoal .redes-sociais img{
+    width: 55px;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    transition: all .1s ease-in;
+}
+.rodape .pessoal .redes-sociais img:hover{
+    transform: scale(1.1);
+}

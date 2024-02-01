@@ -1,0 +1,298 @@
+@media (max-width: 1323px){
+    .compre-ja .cartao-online .expansao{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1241px){
+    .cabecalho{
+        padding: 0 20px;
+    }
+
+    .cabecalho .menu{
+        gap: 0;
+    }
+    
+    .boas-vindas, .gta-online{
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1149px){
+    .compre-ja .cartao-online .expansao{
+        padding: 15px 3px;
+    }
+}
+
+@media (max-width: 1103px){
+    .home .informacoes{
+        padding: 60px 50px;
+        gap: 25px;
+    }
+
+    .compre-ja .cartoes{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .compre-ja .capa-do-jogo{
+        width: 300px;
+    }
+
+    .compre-ja .cartao-gta, .compre-ja .cartao-online{
+        width: 100%;
+        padding: 75px 80px;
+        background-size: 100% 350px;
+    }
+
+    .compre-ja .cartao-online .expansao{
+        width: 80%;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 1080px){
+    .cabecalho{
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 20px;
+    }
+
+    .cabecalho .menu li a{
+        padding: 15px;
+    }
+
+    .home .informacoes{
+        padding: 30px;
+        gap: 25px;
+    }
+    
+    .home .informacoes img{
+        width: 125px;
+    }
+    
+    .home .informacoes .titulo{
+        font-size: 40px;
+    }
+
+    .boas-vindas .personagens, .gta-online .personagens{
+        width: 450px;
+    }
+}
+
+@media (max-width: 768px){
+    .boas-vindas, .gta-online{
+        padding: 50px;
+    }
+    
+    .compre-ja{
+        padding: 30px 60px;
+        gap: 10px;
+    }
+    
+    .compre-ja .titulo{
+        margin-bottom: 25px;
+    }
+
+    .compre-ja .cartoes{
+        width: 100%;
+    }
+
+    .compre-ja .cartao-gta, .compre-ja .cartao-online{
+        padding: 60px;
+        width: 100%;
+    }
+
+    .compre-ja .melhorias{
+        font-size: 18px;
+    }
+
+    .rodape{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 603px){
+    .btn-ver-trailer{
+        padding: 20px 5px;
+    }
+}
+
+@media (max-width: 571px){
+    .cabecalho{
+        height: 150px;
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    .cabecalho .menu{
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 25px;
+    }
+
+    .home .informacoes{
+        min-height: calc(100vh - 150px);
+    }
+
+    .compre-ja .cartao-gta, .compre-ja .cartao-online{
+        padding: 40px;
+        background-size: 100% 320px;
+    }
+
+    .compre-ja .melhorias{
+        font-size: 17px;
+        padding: 30px 50px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 530px){
+    .home .informacoes .lista-de-jogos img{
+        width: 100px;
+    }
+
+    .boas-vindas .personagens, .gta-online .personagens{
+        width: 400px;
+    }
+
+    .boas-vindas .informacoes img, .gta-online .informacoes img{
+        width: 130px;
+    }
+
+    .compre-ja .cartao-gta, .compre-ja .cartao-online{
+        background-size: 100% 260px;
+    }
+
+    .compre-ja .capa-do-jogo{
+        width: 250px;
+    }
+}
+
+@media (max-width: 489px){
+    .compre-ja .informacoes-botao-gta, .compre-ja .informacoes-botao-online{
+        gap: 35px;
+    }
+
+    .btn-plataforma-gta .plataformas .xbox, .btn-plataforma-online .plataformas .xbox{
+        width: 100%;
+    }
+
+    .compre-ja .informacoes .plataformas{
+        flex-direction: column;
+    }
+
+    .rodape .aviso p, .rodape .pessoal p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 456px){
+    .home .informacoes{
+        gap: 15px;
+    }
+
+    .home .informacoes .texto{
+        font-size: 16px;
+    }
+
+    .home .botoes{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-ver-trailer, .btn-comprar{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .boas-vindas .personagens, .gta-online .personagens{
+        width: 375px;
+    }
+
+    .compre-ja .cartao-gta, .compre-ja .cartao-online{
+        background-size: 100% 220px;
+    }
+
+    .compre-ja .capa-do-jogo{
+        max-width: 200px;
+    }
+
+    .compre-ja .informacoes h3{
+        font-size: 45px;
+    }
+
+    .compre-ja .informacoes .texto{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 445px){
+    .cabecalho .menu li a{
+        font-size: 14px;
+    }
+    
+    .home::after{
+        background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .4) 80%, transparent 100%);
+    }
+
+    .boas-vindas, .gta-online{
+        padding: 50px 20px;
+    }
+
+    .compre-ja{
+        padding: 30px 20px;
+    }
+
+    .rodape{
+        padding: 40px 25px;
+    }
+}
+
+@media (max-width: 375px){
+    .home .informacoes .titulo{
+        font-size: 35px;
+    }
+
+    .home .informacoes .texto{
+        font-size: 14px;
+    }
+
+    .boas-vindas .personagens, .gta-online .personagens{
+        width: 300px;
+    }
+
+    .compre-ja .melhorias{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px){
+    .home .informacoes .lista-de-jogos img{
+        width: 80px;
+    }
+
+    .boas-vindas .personagens, .gta-online .personagens{
+        width: 250px;
+    }
+
+    .compre-ja .cartao-online .expansao{
+        width: 90%;
+        padding: 15px;
+    }
+
+    .btn-plataforma-gta, .btn-plataforma-online{
+        padding: 20px 15px;
+    }
+
+    .compre-ja .melhorias{
+        font-size: 14px;
+        padding: 30px;
+    }
+}
