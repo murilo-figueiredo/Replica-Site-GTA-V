@@ -14,8 +14,13 @@
         gap: 0;
     }
     
-    .boas-vindas, .gta-online{
+    .boas-vindas{
         flex-direction: column;
+        gap: 25px;
+    }
+
+    .gta-online{
+        flex-direction: column-reverse;
         gap: 25px;
     }
 }
